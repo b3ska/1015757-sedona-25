@@ -5,47 +5,93 @@
     <title>HTML Academy: Гостинницы в Седоне</title>
   </head>
   <body>
-    <main>
-      <nav class="navigation_bar">
-        <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="phtoto_and_video.html">Фото и видео</a></li>
-          <li><a href="state_map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостинницы</a></li>
+    <div class="centered_page">
+      <header class="header_navigation">
+        <nav class="navigation_bar">
+          <div class="sedona_logo">
+            <img src="http://placehold.it/140x70">
+          </div>
+          <ul>
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="phtoto_and_video.html">Фото и видео</a></li>
+            <li><a href="state_map.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостинницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="hotels">
+          <div class="hotels_item">
+            <div class="left_side">
+              <img src="http://placehold.it/135x90">
+            </div>
+            <div class="mid_side">
+              <h3>AMARA RESORT & SPA</h3>
+              <div class="info">
+                <span class="name">ГОСТИННИЦА</span>
+                <span class="money">ОТ 4000 Р.</span>
+              </div>
+                <a href="more_about_hotel.html">ПОДРОБНЕЕ</a>
+                <button type="button" class="booking">ЗАБРОНИРОВАТЬ</button>
+            </div>
+            <div class="right_side">
+              <img src="http://placehold.it/17x17">
+              <img src="http://placehold.it/17x17">
+              <img src="http://placehold.it/17x17">
+              <img src="http://placehold.it/17x17">
+              <p>РЕЙТИНГ: 8,5</p>
+            </div>
+          </div>
+          <div class="hotels_item2">
+            <div class="left_side">
+              <img src="http://placehold.it/135x90">
+            </div>
+            <div class="mid_side">
+              <h3>DESERT QUAL INN</h3>
+              <div class="info">
+                <span class="name">МОТЕЛЬ</span>
+                <span class="money">ОТ 3000 Р.</span>
+              </div>
+                <a href="more_about_hotel2.html">ПОДРОБНЕЕ</a>
+                <button type="button" class="booking">ЗАБРОНИРОВАТЬ</button>
+              </div>
+              <div class="right_side">
+                <img src="http://placehold.it/17x17">
+                <img src="http://placehold.it/17x17">
+                <img src="http://placehold.it/17x17">
+                <p>РЕЙТИНГ: 8,9</p>
+              </div>
+          </div>
+          <div class="hotels_item3">
+            <div class="left_side">
+              <img src="http://placehold.it/135x90">
+            </div>
+            <div class="mid_side">
+              <h3>VILLAS AT POCO DIABLO</h3>
+              <div class="info">
+                <span class="name">МОТЕЛЬ</span>
+                 <span class="money">ОТ 2000 Р.</span>
+              </div>
+              <a href="more_about_hotel3.html">ПОДРОБНЕЕ</a>
+              <button type="button" class="booking">ЗАБРОНИРОВАТЬ</button>
+            </div>
+            <div class="right_side">
+              <img src="http://placehold.it/17x17">
+              <img src="http://placehold.it/17x17">
+              <p>РЕЙТИНГ: 9,2</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page_end">
+        <h3 class="tag">#VISITSEDONA</h3>
+        <ul class="social_networks">
+          <li class="twitter_icon"><a href="https://twitter.com">twitter icon</a></li>
+          <li class="facebook_icon"><a href="https://www.facebook.com">facebook icon</a></li>
+          <li class="youtube_icon"><a href="https://www.youtube.com">youtube icon</a></li>
         </ul>
-      </nav>
-      <ul class="hotels_list">
-        <li>
-          <img src="http://placehold.it/150x100">
-          <h3>AMARA RESORT & SPA</h3>
-          <p>ГОСТИННИЦА ОТ 4000 Р.</p>
-          <button>ПОДРОБНЕЕ</button>
-          <button>ЗАБРОНИРОВАТЬ</button>
-        </li>
-        <li>
-          <img src="http://placehold.it/150x100">
-          <h3>DESERT QUAL INN</h3>
-          <p>МОТЕЛЬ ОТ 3000 Р.</p>
-          <button>ПОДРОБНЕЕ</button>
-          <button>ЗАБРОНИРОВАТЬ</button>
-        </li>
-        <li>
-          <img src="http://placehold.it/150x100">
-          <h3>VILLAS AT POCO DIABLO</h3>
-          <p>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
-          <button>ПОДРОБНЕЕ</button>
-          <button>ЗАБРОНИРОВАТЬ</button>
-        </li>
-      </ul>
-    </main>
-    <footer class="page_end">
-      <h3 class="tag">#VISITSEDONA</h3>
-      <ul class="social_networks">
-        <li class="twitter_icon">twitter icon</li>
-        <li class="facebook_icon">facebook icon</li>
-        <li class="youtube_icon">youtube icon</li>
-      </ul>
-      <p class="owner">WEBSITE BY html academy</p>
-
+        <p class="owner">WEBSITE BY html<img src="http://placehold.it/120x40"></p>
+      </footer>
+    </div>
   </body>
 </html>
