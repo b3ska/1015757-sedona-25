@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+.links {
+  list-style: none;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hotel_search_button {
+  list-style: none;
+}
+
+.hotel_search_button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.movement_window {
+  display: none;
+}
+
+.rating {
+  color: rgb(102, 102, 102);
+}
+
+.mid_side {
+  list-style: none;
+}
+
+.mid_side a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
