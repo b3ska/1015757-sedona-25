@@ -232,13 +232,10 @@ p {
   background-color: white;
   height: 22px;
   width: 21px;
-  background-image: url("../img/calendar_svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 12px 3px;
   padding: 0;
+  padding-right: 9px;
 }
-.calendar_svg {
+.calendar_svg #path_svg_calendar {
   fill: #cccccc;
 }
 
@@ -257,6 +254,15 @@ p {
   align-items: center;
   margin: 0;
   width: 230px;
+}
+
+.adults_hm {
+  padding-right: 41px;
+}
+
+.childs_hm {
+  padding-left: 53px;
+  padding-right: 27px;
 }
 
 .childs {
@@ -295,8 +301,8 @@ p {
 .minus {
   border: 0;
   background-color: white;
-  height: 38px;
-  width: 38px;
+  min-height: 38px;
+  min-width: 38px;
   background-image: url("../img/minus_usual.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -307,8 +313,8 @@ p {
 .plus{
   border: 0;
   background-color: white;
-  height: 38px;
-  width: 38px;
+  min-height: 38px;
+  min-width: 38px;
   background-image: url("../img/plus_usual.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -418,6 +424,10 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.checkboxes_string {
+
 }
 
 .type_hotel p {
