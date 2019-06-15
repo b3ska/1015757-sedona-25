@@ -4,77 +4,155 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="./css/index_style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="centered_page">
+
+      <!-- начало хедера -->
+
       <header class="header_navigation">
         <nav class="navigation_bar">
-          <div class="sedona_logo">
-            <a href="index.html"><img src="./img/logo-sedona.svg" width="140" height="72" alt="Седона"></a>
-          </div>
-          <ul class="links">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="phtoto_and_video.html">Фото и видео</a></li>
-            <li><a href="state_map.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостинницы</a></li>
-          </ul>
+            <ul class="links">
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="phtoto_and_video.html">Фото и видео</a></li>
+              <li><a href="state_map.html">Карта штата</a></li>
+              <li><a href="catalog.html">Гостинницы</a></li>
+            </ul>
+            <div class="sedona_logo">
+              <a href="index.html"><img src="./img/logo-sedona.svg" width="140" height="72" alt="Седона"></a>
+            </div>
         </nav>
       </header>
+
+      <!--начало мэйна-->
+
       <main>
-        <div class="images_top">
-          <img src="./img/intro-welcome.svg" width="459" height="353" alt="welcome">
+        <div class="mask_image_top">
+          <div class="images_top">
+            <img src="./img/intro-welcome.svg" width="459" height="353" alt="welcome">
+          </div>
         </div>
         <div class="motivation_to_read">
-          <h2 class="sedona_interserting">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-          <p class="5_reasons">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+          <h2 class="sedona_interserting">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+          <p class="five_reasons_check">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        </div>
+        <div class="content_for">
+          <div class="real_city">
+            <div class="text_real_city">
+              <h2>Настоящий<br>городок</h2>
+              <p>-№1-</p>
+              <p class="ptwo">Седона - не аттракцион для туристов,<br>там течёт вся жизнь</p>
+            </div>
+            <div class="image_real_city">
+            </div>
+          </div>
+          <div class="home_eat_souvenir">
+            <div class="home">
+              <img src="./img/icon-1.svg" width="75" height="72">
+              <h2>Жильё</h2>
+              <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+            </div>
+            <div class="eat">
+              <img src="./img/icon-2.svg" width="74" height="70">
+              <h2>Еда</h2>
+              <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+            </div>
+            <div class="souvenir">
+              <img src="./img/icon-3.svg" width="64" height="76">
+              <h2>Сувениры</h2>
+              <p>Не только китайского, но и местного<br>производства!</p>
+            </div>
+          </div>
+          <div class="devil_bridge">
+            <div class="text_devil_bridge">
+              <h2>Там есть<br>Мост дьявола</h2>
+              <p>-№2-</p>
+              <p class="ptwo">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+            </div>
+            <div class="image_devil_bridge">
+            </div>
+          </div>
+          <div class="last_three_reasons">
+            <div class="little_spot">
+              <h2>Небольшая<br>площадь</h2>
+              <p>-№3-</p>
+              <p class="ptwo">Все достопримечательности<br>находятся очень близко</p>
+            </div>
+            <div class="beauty_road">
+              <h2>Красивая<br>дорога</h2>
+              <p>-№4-</p>
+              <p class="ptwo">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+            </div>
+            <div class="not_enouth_tourists">
+              <h2>Мало<br>туристов</h2>
+              <p>-№5-</p>
+              <p class="ptwo">Большинство едет в гранд каньон<br>и толпится там</p>
+            </div>
+          </div>
         </div>
         <div class="user_helping">
           <h1 class="question">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
           <p class="calling_text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
         </div>
           <div class="hotel_search">
-            <header class="hotel_search_button" type="button"><a href="#movement_window_id">ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</a></header>
+            <button class="hotel_search_button"><a href="#movement_window_id">ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</a></button>
+
+            <!-- начало выдвигающегося окна -->
+
             <div class="movement_window" id="movement_window_id">
-              <form class="visually-hidden" method="post" action="/">
+              <form method="post" action="/">
                 <div class="into_time">
                   <p>
-                    <label for="text_input_id" class="date">ДАТА ЗАЕЗДА:</p>
+                    <label for="text_input_id" class="date">ДАТА ЗАЕЗДА:</label>
                     <input type="text" class="text_input_time" name="into_time" placeholder="24 АПРЕЛЯ 2017" id="text_input_id"></input>
                   </p>
-                  <button><img src="./img/calendar.svg" alt="Календарь" width="21" height="22"></button>
+                  <button class="calendar"><img src="./img/calendar.svg" alt="Календарь" width="21" height="22"></button>
                 </div>
                 <div class="out_time">
                   <p>
                     <label for="text_out_id" class="date">ДАТА ВЫЕЗДА:</label>
                     <input type="text" class="text_out_time" name="out_time" placeholder="4 ИЮЛЯ 2017" id="text_out_id"></input>
                   </p>
-                  <button><img src="./img/calendar.svg" alt="Календарь" width="21" height="22"></button>
+                  <button class="calendar"><img src="./img/calendar.svg" alt="Календарь" width="21" height="22" class="calendar_svg"></button>
                 </div>
                 <div class="adults_childs">
-                  <p>
+                  <p class="adults">
                     <label for="adults_hm">ВЗРОСЛЫЕ:</label>
-                    <button>-</button><input type="text" id="adults_hm" name="adults" placeholder="1"></input><button>+</button>
+                    <button class="minus"></button><input type="text" id="adults_hm" name="adults" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
                   </p>
-                  <p>
+                  <p class="childs">
                     <label for="childs_hm">ДЕТИ:</label>
-                    <button>-</button><input type="text" id="childs_hm" name="childs" placeholder="1"></input><button>+</button>
-                    <input type="submit" value="НАЙТИ"></input>
+                    <button class="minus"></button><input type="text" id="childs_hm" name="childs" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
+                  </p>
                 </div>
+                <input type="submit" value="НАЙТИ"></input>
               </div>
           </div>
         <span class="map">soon here will be map</span>
-      </main>
-      <footer class="page_end">
-          <h2 class="tag">#VISITSEDONA</h2>
-          <ul class="social_networks">
-            <li class="twitter_icon"><a href="https://twitter.com"><img src="./img/twitter.svg" alt="twitter"></a></li>
-            <li class="facebook_icon"><a href="https://www.facebook.com"><img src="./img/fb-icon.svg" alt="facebook"></a></li>
-            <li class="youtube_icon"><a href="https://www.youtube.com"><img src="./img/youtube.svg" alt="youtube"></a></li>
-          </ul>
-          <p class="owner">WEBSITE BY<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-htmlacademy.svg" width="115" height="41"></a></p>
-      </footer>
+        </main>
+
+        <!-- начало футера -->
+
+        <footer class="page_end">
+          <div class="footer_block">
+            <h2 class="tag">#VISITSEDONA</h2>
+          </div>
+          <div class="footer_social_block">
+            <ul class="social_networks">
+              <li class="icon"><a href="https://twitter.com" class="social_network_icon"><img src="./img/twitter.svg" alt="twitter" width="46" height="15"></a></li>
+              <li class="icon"><a href="https://www.facebook.com" class="social_network_icon"><img src="./img/fb-icon.svg" alt="facebook"  width="46" height="22"></a></li>
+              <li class="icon"><a href="https://www.youtube.com" class="social_network_icon"><img src="./img/youtube.svg" alt="youtube"  width="46" height="16"></a></li>
+            </ul>
+          </div>
+          <div class="footer_block">
+            <div class="owner">WEBSITE BY</div>
+            <div class="htmlacademy_logo">
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-htmlacademy.svg" width="115" height="41"></a>
+            </div>
+          </div>
+        </footer>
      </div>
   </body>
 </html>
