@@ -18,7 +18,7 @@
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="phtoto_and_video.html">Фото и видео</a></li>
                     <li><a href="state_map.html">Карта штата</a></li>
-                    <li><a href="catalog.html">Гостинницы</a></li>
+                    <li><a href="catalog.html" class="current_page">Гостинницы</a></li>
                   </ul>
                   <div class="sedona_logo">
                     <a href="index.html"><img src="./img/logo-sedona.svg" width="140" height="72" alt="Седона"></a>
@@ -34,16 +34,19 @@
             <p>инфраструктура:</p>
             <div class="checkboxes">
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_swim">
-                <label for="checkbox_swim">Бассейн</label>
+                <input type="checkbox" id="checkbox_swim" class="checkbox_filter">
+                <label for="checkbox_swim"></label>
+                <label for="checkbox_swim" class="label_check">Бассейн</label>
               </div>
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_parking">
-                <label for="checkbox_parking">парковка</label>
+                <input type="checkbox" id="checkbox_parking" class="checkbox_filter">
+                <label for="checkbox_parking"></label>
+                <label for="checkbox_parking" class="label_check">парковка</label>
               </div>
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_wifi">
-                <label for="checkbox_wifi">wi-fi</label>
+                <input type="checkbox" id="checkbox_wifi" class="checkbox_filter">
+                <label for="checkbox_wifi"></label>
+                <label for="checkbox_wifi" class="label_check">wi-fi</label>
               </div>
             </div>
           </div>
@@ -51,16 +54,19 @@
             <p>Тип жилья:</p>
             <div class="checkboxes">
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_swim">
-                <label for="checkbox_swim">Гостинница</label>
+                <input type="checkbox" id="checkbox_swim" class="checkbox_filter">
+                <label for="checkbox_swim"></label>
+                <label for="checkbox_swim" class="label_check">Гостинница</label>
               </div>
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_parking">
-                <label for="checkbox_parking">Мотель</label>
+                <input type="checkbox" id="checkbox_parking" class="checkbox_filter">
+                <label for="checkbox_parking"></label>
+                <label for="checkbox_parking" class="label_check">Мотель</label>
               </div>
               <div class="checkboxes_string">
-                <input type="checkbox" id="checkbox_wifi">
-                <label for="checkbox_wifi">Аппартаменты</label>
+                <input type="checkbox" id="checkbox_wifi" class="checkbox_filter">
+                <label for="checkbox_wifi"></label>
+                <label for="checkbox_wifi" class="label_check">Аппартаменты</label>
               </div>
             </div>
           </div>
@@ -80,11 +86,24 @@
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </div>
+        <div class="sort">
+          <h2>найдено: 3</h2>
+          <p>сортировка</p>
+          <div class="sort_by">
+            <a>по цене</a>
+            <a>по типу</a>
+            <a>по рейтингу</a>
+          </div>
+          <div class="sort_up_down">
+            <button class="up"></button>
+            <button class="down"></button>
+          </div>
+        </div>
         <div class="hotels">
-          <hr> 
+          <hr>
           <div class="hotels_item">
             <div class="left_side">
-              <img src="./img/amara-resort.jpg">
+              <img src="./img/amara-resort.jpg" alt="amara-resort" width="100%" height="100%">
             </div>
             <div class="mid_side">
               <h2>AMARA RESORT & SPA</h2>
@@ -101,17 +120,17 @@
             </div>
             <div class="right_side">
               <div class="stars_block">
-                <img src="./img/star.svg" width="18" height="17">
-                <img src="./img/star.svg" width="18" height="17">
-                <img src="./img/star.svg" width="18" height="17">
-                <img src="./img/star.svg" width="18" height="17">
+                <img src="./img/star.svg" width="18" height="17" alt="star">
+                <img src="./img/star.svg" width="18" height="17 alt="star"">
+                <img src="./img/star.svg" width="18" height="17" alt="star">
+                <img src="./img/star.svg" width="18" height="17" alt="star">
               </div>
               <p class="rating">РЕЙТИНГ: 8,5</p>
             </div>
           </div>
           <div class="hotels_item">
             <div class="left_side">
-              <img src="./img/desertQI.jpg">
+              <img src="./img/desertQI.jpg" alt="Desert QualINN" width="100%" height="100%">
             </div>
             <div class="mid_side">
               <h2>DESERT QUAL INN</h2>
@@ -128,16 +147,16 @@
             </div>
               <div class="right_side">
                 <div class="stars_block">
-                  <img src="./img/star.svg" width="18" height="17">
-                  <img src="./img/star.svg" width="18" height="17">
-                  <img src="./img/star.svg" width="18" height="17">
+                  <img src="./img/star.svg" width="18" height="17" alt="star">
+                  <img src="./img/star.svg" width="18" height="17" alt="star">
+                  <img src="./img/star.svg" width="18" height="17" alt="star">
                 </div>
                 <p class="rating">РЕЙТИНГ: 8,9</p>
               </div>
           </div>
           <div class="hotels_item">
             <div class="left_side">
-              <img src="./img/poco-diablo.jpg">
+              <img src="./img/poco-diablo.jpg" alt="villas at poco diablo" width="100%" height="100%">
             </div>
             <div class="mid_side">
               <h2>VILLAS AT POCO DIABLO</h2>
@@ -154,8 +173,8 @@
             </div>
             <div class="right_side">
               <div class="stars_block">
-                <img src="./img/star.svg" width="18" height="17">
-                <img src="./img/star.svg" width="18" height="17">
+                <img src="./img/star.svg" width="18" height="17" alt="star">
+                <img src="./img/star.svg" width="18" height="17" alt="star">
               </div>
               <p class="rating">РЕЙТИНГ: 9,2</p>
             </div>
@@ -176,7 +195,7 @@
         <div class="footer_block">
           <div class="owner">WEBSITE BY</div>
           <div class="htmlacademy_logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-htmlacademy.svg" width="115" height="41"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </div>
         </div>
       </footer>

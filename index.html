@@ -50,17 +50,17 @@
           </div>
           <div class="home_eat_souvenir">
             <div class="home">
-              <img src="./img/icon-1.svg" width="75" height="72">
+              <img src="./img/icon-1.svg" width="75" height="72" alt="Жильё">
               <h2>Жильё</h2>
               <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
             </div>
             <div class="eat">
-              <img src="./img/icon-2.svg" width="74" height="70">
+              <img src="./img/icon-2.svg" width="74" height="70" alt="Еда">
               <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             </div>
             <div class="souvenir">
-              <img src="./img/icon-3.svg" width="64" height="76">
+              <img src="./img/icon-3.svg" width="64" height="76" alt="Сувениры">
               <h2>Сувениры</h2>
               <p>Не только китайского, но и местного<br>производства!</p>
             </div>
@@ -96,63 +96,66 @@
           <h1 class="question">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
           <p class="calling_text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
         </div>
+        <div class="form_container">
+          <div class="map_img">
+          </div>
           <div class="hotel_search">
-            <button class="hotel_search_button"><a href="#movement_window_id">ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</a></button>
+            <button class="hotel_search_button"><a href="#movement_window_id" class="hotel_search_button_a">ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</a></button>
 
             <!-- начало выдвигающегося окна -->
-
             <div class="movement_window" id="movement_window_id">
               <form method="post" action="/">
-                <div class="into_time">
-                  <p>
-                    <label for="text_input_id" class="date">ДАТА ЗАЕЗДА:</label>
-                    <input type="text" class="text_input_time" name="into_time" placeholder="24 АПРЕЛЯ 2017" id="text_input_id"></input>
-                  </p>
-                  <button class="calendar"><img src="./img/calendar.svg" alt="Календарь" width="21" height="22"></button>
-                </div>
-                <div class="out_time">
-                  <p>
-                    <label for="text_out_id" class="date">ДАТА ВЫЕЗДА:</label>
-                    <input type="text" class="text_out_time" name="out_time" placeholder="4 ИЮЛЯ 2017" id="text_out_id"></input>
-                  </p>
-                  <button class="calendar"><img src="./img/calendar_gray.svg" alt="Календарь" width="21" height="22" class="calendar_svg"></button>
-                </div>
-                <div class="adults_childs">
-                  <p class="adults">
-                    <label for="adults_hm" class="adults_hm">ВЗРОСЛЫЕ:</label>
-                    <button class="minus"></button><input type="text" id="adults_hm" name="adults" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
-                  </p>
-                  <p class="childs">
-                    <label for="childs_hm" class="childs_hm">ДЕТИ:</label>
-                    <button class="minus"></button><input type="text" id="childs_hm" name="childs" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
-                  </p>
-                </div>
-                <input type="submit" value="НАЙТИ"></input>
-              </div>
+                  <div class="into_time">
+                      <label for="text_input_id" class="date">ДАТА ЗАЕЗДА:</label>
+                      <div class="time_calendar">
+                        <input type="text" class="text_time" name="into_time" placeholder="24 АПРЕЛЯ 2017" id="text_input_id"></input>
+                        <button class="calendar"></button>
+                      </div>
+                  </div>
+                  <div class="out_time">
+                      <label for="text_out_id" class="date">ДАТА ВЫЕЗДА:</label> <!-- WARNING: ошибка с фоном календаря -->
+                      <div class="time_calendar">
+                        <input type="text" class="text_time" name="out_time" placeholder="4 ИЮЛЯ 2017" id="text_out_id"></input>
+                        <button class="calendar"></button>
+                      </div>
+                  </div>
+                  <div class="adults_childs">
+                    <p class="adults">
+                      <label for="adults_hm" class="adults_hm">ВЗРОСЛЫЕ:</label>
+                      <button class="minus"></button><input type="text" id="adults_hm" name="adults" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
+                    </p>
+                    <p class="childs">
+                      <label for="childs_hm" class="childs_hm">ДЕТИ:</label>
+                      <button class="minus"></button><input type="text" id="childs_hm" name="childs" placeholder="1" class="input_adult_childs"></input><button class="plus"></button>
+                    </p>
+                  </div>
+                  <input type="submit" value="НАЙТИ" class="find"></input>
+                </form>
+            </div>
           </div>
-        <span class="map">soon here will be map</span>
-        </main>
+        </div>
+      </main>
 
         <!-- начало футера -->
 
-        <footer class="page_end">
-          <div class="footer_block">
-            <h2 class="tag">#VISITSEDONA</h2>
+      <footer class="page_end">
+        <div class="footer_block">
+          <h2 class="tag">#VISITSEDONA</h2>
+        </div>
+        <div class="footer_social_block">
+          <ul class="social_networks">
+            <li class="icon"><a href="https://twitter.com" class="social_network_icon"><img src="./img/twitter.svg" alt="twitter" width="46" height="15"></a></li>
+            <li class="icon"><a href="https://www.facebook.com" class="social_network_icon"><img src="./img/fb-icon.svg" alt="facebook"  width="46" height="22"></a></li>
+            <li class="icon"><a href="https://www.youtube.com" class="social_network_icon"><img src="./img/youtube.svg" alt="youtube"  width="46" height="16"></a></li>
+          </ul>
+        </div>
+        <div class="footer_block">
+          <div class="owner">WEBSITE BY</div>
+          <div class="htmlacademy_logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </div>
-          <div class="footer_social_block">
-            <ul class="social_networks">
-              <li class="icon"><a href="https://twitter.com" class="social_network_icon"><img src="./img/twitter.svg" alt="twitter" width="46" height="15"></a></li>
-              <li class="icon"><a href="https://www.facebook.com" class="social_network_icon"><img src="./img/fb-icon.svg" alt="facebook"  width="46" height="22"></a></li>
-              <li class="icon"><a href="https://www.youtube.com" class="social_network_icon"><img src="./img/youtube.svg" alt="youtube"  width="46" height="16"></a></li>
-            </ul>
-          </div>
-          <div class="footer_block">
-            <div class="owner">WEBSITE BY</div>
-            <div class="htmlacademy_logo">
-              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logo-htmlacademy.svg" width="115" height="41"></a>
-            </div>
-          </div>
-        </footer>
+        </div>
+      </footer>
      </div>
   </body>
 </html>
