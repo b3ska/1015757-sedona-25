@@ -30,7 +30,7 @@ p {
 
 .header_navigation {
   height: 56px;
-  vertical-align: bottom;
+  vertical-align: bottom;с. без НД
 }
 
 .sedona_logo {
@@ -298,7 +298,7 @@ a.current_page {
 
 .text_time {
   min-height: 38px;
-  width: 308px;
+  width: 346px;
   border: 0;
   background-color: #f2f2f2;
   padding: 0;
@@ -323,12 +323,16 @@ a.current_page {
   width: 346px;
   display: flex;
   flex-direction: row;
-
+  justify-content: flex-end;
 }
 
 .calendar {
   border: 0;
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("../img/calendar_gray.svg");
   background-repeat:  no-repeat;
   background-size: 21px 22px;
@@ -393,6 +397,10 @@ a.current_page {
 }
 
 .input_adult_childs {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
   width: 38px;
   min-height: 38px;
   border: 0;
