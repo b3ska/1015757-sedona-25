@@ -242,7 +242,7 @@ a.current_page {
   color: rgba(146, 138, 133, 0.3);
 }
 
-.hotel_search_button a {
+.hotel_search_button_p {
   color: white;
   text-decoration: none;
   font-weight: 700;
