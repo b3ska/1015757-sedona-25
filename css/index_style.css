@@ -2,9 +2,6 @@
 
 body {
   margin: 0;
-  font-size: 14px;
-  line-height: 26px;
-  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -13,13 +10,10 @@ ul {
   padding: 0;
 }
 
-p {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .centered_page {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'PT Sans', sans-serif;
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 12px -5.5px;
@@ -30,7 +24,7 @@ p {
 
 .header_navigation {
   height: 56px;
-  vertical-align: bottom;с. без НД
+  vertical-align: bottom;
 }
 
 .sedona_logo {
@@ -204,12 +198,10 @@ a.current_page {
 }
 
 .map_img {
-  width: 1200px;
-  height: 473px;
-  background-image: url("../img/map.png");;
-  background-position: center;
+  display: flex;
   position: absolute;
   top: 86px;
+  border: 0;
 }
 
 .hotel_search {
@@ -235,6 +227,7 @@ a.current_page {
 
 .hotel_search_button:hover {
   background-color: #604e43;
+  cursor: pointer;
 }
 
 .hotel_search_button:active {
@@ -268,6 +261,7 @@ a.current_page {
 .mvindow_hiden {
   max-height: 0;
   min-height: 0;
+  overflow: hidden;
 }
 
 .date {
@@ -547,6 +541,10 @@ a.current_page {
   background-image: url("../img/logo-htmlacademy_active.svg");
 }
 
+.footer_block label {
+  display: none;
+}
+
                                                   /* WARNING: catalog.html */
 
 
@@ -722,7 +720,7 @@ input[type=checkbox]:checked + label {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: #ababab;
 }
 
 .range-toggle-min {
@@ -819,6 +817,8 @@ a.active_sort {
   height: 10px;
   border: 0;
   background-image: url("../img/icon-up-dir.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: white;
 }
 
@@ -839,6 +839,8 @@ a.active_sort {
   height: 10px;
   border: 0;
   background-image: url("../img/icon-down-dir.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: white;
 }
 
@@ -973,7 +975,9 @@ a.active_sort {
 }
 
 .rating {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
   color: rgb(102, 102, 102);
   margin: 0;
-  margin-right: 14px;
 }

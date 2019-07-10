@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="./css/index_style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="./css/index_style.css" type="text/css" rel="stylesheet">
+    <link href="./css/index_resized_style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <div class="centered_page">
@@ -97,8 +98,8 @@
           <p class="calling_text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИННИЦ В СЕДОНЕ</p>
         </div>
         <div class="form_container">
-          <div class="map_img">
-          </div>
+          <iframe class="map_img" src="./img/map.png" width="1200"  height="473">
+          </iframe>
           <div class="hotel_search">
             <header class="hotel_search_button"><p class="hotel_search_button_p">ПОИСК ГОСТИННИЦЫ В СЕДОНЕ</p></header>
 
@@ -151,12 +152,13 @@
         </div>
         <div class="footer_block">
           <div class="owner">WEBSITE BY</div>
-          <div class="htmlacademy_logo">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
-          </div>
+          <a class="htmlacademy_logo" href="https://htmlacademy.ru/intensive/htmlcss" id="academy_logo">
+          </a>
+          <label for="academy_logo">htmlacademy</label>
         </div>
       </footer>
      </div>
      <script language="javascript" type="text/javascript" src="js/index_script.js"></script>
+     <script language="javascript" type="text/javascript" src="js/compressed_index.js"></script>
   </body>
 </html>
