@@ -1,0 +1,1 @@
+var button=document.querySelector(".hotel_search_button"),mwindow=document.querySelector(".movement_window");button.addEventListener("click",function(e){e.preventDefault(),mwindow.classList.toggle("mvindow_hiden")});
