@@ -541,7 +541,7 @@ a.current_page {
   background-image: url("../img/logo-htmlacademy_active.svg");
 }
 
-.footer_block label {
+.footer_block aria-label {
   display: none;
 }
 
